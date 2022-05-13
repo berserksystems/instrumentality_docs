@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions.
+title: Data.
 ---
 
 # {% $markdoc.frontmatter.title %}

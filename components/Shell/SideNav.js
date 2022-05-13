@@ -13,7 +13,7 @@ const items = [
     ]
   },
   {
-    title: 'Routes',
+    title: 'Endpoints',
     links: [
       { href: '/docs/frontpage', children: '/' },
       { href: '/docs/add', children: '/add' },

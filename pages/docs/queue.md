@@ -1,0 +1,29 @@
+---
+title: /queue
+description: The queue.
+---
+
+# {% $markdoc.frontmatter.title %}
+
+## Request
+HTTP GET
+Header: {X-API-KEY: "APIKEY"}
+Queue requests must supply a platforms argument, which is an array of platform strings.
+
+`/queue?platforms=[platform1, platform2]`
+
+This array can be one element long.
+## Response
+```json
+{
+    "response": "OK",
+    "queue_id": "UUID_V4_STRING",
+    "username": "USERNAME",
+    "platform": "PLATFORM_NAME",
+    "platform_id": "USERNAME'S UNIQUE PLATFORM_NAME ID"
+}
+```
+
+## Notes
+
+In some cases, `platform_id` will equal `username`.

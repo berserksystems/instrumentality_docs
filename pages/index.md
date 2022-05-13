@@ -1,6 +1,6 @@
 ---
-title: A data aggregation platform.
-description: All souls will become one and find eternal peace.
+title: Instrumentality.
+description: A data aggregation platform.
 ---
 
 {% section %}

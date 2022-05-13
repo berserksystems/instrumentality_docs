@@ -8,7 +8,7 @@ title: Frequently Asked Questions.
 
 Isn't that the question! Instrumentality puts no requirements on how data is extracted, only that it is done within a certain timeframe if it is a queue job. 
 
-Platforms come in all shapes and sizes. Some have explicit APIs, some are only accessible through apps. It's unlikely that you 
+Platforms come in all shapes and sizes. Some have explicit APIs, some are only accessible through apps. It's best to use an API as all required data should be available that way.
 
 ## Is it OK if I skip a couple fields while providing data?
 
