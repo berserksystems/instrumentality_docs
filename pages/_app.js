@@ -1,14 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import Script from 'next/script';
-import { useRouter } from 'next/router';
+// import Script from 'next/script';
+// import { useRouter } from 'next/router';
 
 import { AppLink as Link } from '../components/AppLink';
 import { Footer, SideNav, TableOfContents, TopNav } from '../components/Shell';
 
 import 'prismjs';
 import 'prismjs/components/prism-bash.min';
-import 'prismjs/components/prism-graphql.min';
 import 'prismjs/components/prism-javascript.min';
 import 'prismjs/components/prism-json.min';
 import 'prismjs/components/prism-jsx.min';
@@ -16,44 +15,17 @@ import 'prismjs/components/prism-markup.min';
 import 'prismjs/components/prism-toml.min';
 import 'prismjs/components/prism-typescript.min';
 import 'prismjs/components/prism-yaml.min';
+// import 'prismjs/components/prism-rust.min';
 import 'prismjs/plugins/autolinker/prism-autolinker.min';
 import 'prismjs/themes/prism.css';
 import 'codemirror/lib/codemirror.css';
 
 import '../public/globals.css';
 
-const TITLE = 'Markdoc';
-const DESCRIPTION = 'A powerful, flexible, Markdown-based authoring framework';
-const MARKDOC = `
-
-
-  ███    ███  █████  ██████  ██   ██ ██████   ██████   ██████
-  ████  ████ ██   ██ ██   ██ ██  ██  ██   ██ ██    ██ ██
-  ██ ████ ██ ███████ ██████  █████   ██   ██ ██    ██ ██
-  ██  ██  ██ ██   ██ ██   ██ ██  ██  ██   ██ ██    ██ ██
-  ██      ██ ██   ██ ██   ██ ██   ██ ██████   ██████   ██████
-
-
-
-`;
+const TITLE = 'Instrumentality';
+const DESCRIPTION = 'A data aggregation platform.';
 
 const FONTS_BASE_URL = process.env.NEXT_PUBLIC_FONTS_BASE_URL || '/fonts';
-
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
-function useGoogleAnalytics() {
-  const router = useRouter();
-  React.useEffect(() => {
-    const handleRouteChange = (url) => {
-      window.gtag('config', GA_TRACKING_ID, {
-        page_path: url
-      });
-    };
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
-}
 
 function collectHeadings(node, sections = []) {
   if (node) {
@@ -97,33 +69,12 @@ export default function MyApp(props) {
     ? collectHeadings(pageProps.markdoc.content)
     : [];
 
-  const isDocs = props.router.asPath.startsWith('/docs');
-  const isLandingPage = props.router.pathname === '/';
-
-  React.useEffect(() => console.log(MARKDOC), []);
-  useGoogleAnalytics();
+  const isDocs = props.router.asPath.startsWith('/');
+  const isLandingPage = false;
 
   return (
     <div className={`${isLandingPage ? 'page--landing' : ''}`}>
       {/* https://github.com/vercel/next.js/blob/canary/examples/with-google-analytics/pages/_app.js */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-      />
-      <Script
-        id="gtag-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `
-        }}
-      />
       <Head>
         <title>{`${TITLE} | ${title}`}</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -154,17 +105,17 @@ export default function MyApp(props) {
         <meta name="title" content={title} />
         <meta name="description" content={description} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://markdoc.io" />
+        <meta property="og:url" content="https://instrumentality.berserksystems.com/docs/" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
-          content="https://markdoc.io/images/share.png"
+          content="https://instrumentality.berserksystems.com/logo.png"
         />
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:image"
-          content="https://markdoc.io/images/share.png"
+          content="https://instrumentality.berserksystems.com/logo.png"
         />
       </Head>
       {/* https://webaim.org/techniques/skipnav/ */}
@@ -173,14 +124,10 @@ export default function MyApp(props) {
       </a>
       <TopNav>
         <Link href="/docs/getting-started">Docs</Link>
-        <Link href="https://github.com/markdoc/markdoc">GitHub</Link>
-        <Link href="https://github.com/markdoc/markdoc/discussions">
+        <Link href="https://github.com/berserksystems/instrumentality">GitHub</Link>
+        <Link href="https://github.com/berserksystems/instrumentality/discussions">
           Community
         </Link>
-        <Link href="https://twitter.com/StripeDev">Twitter</Link>
-        <span className="primary no-mobile">
-          <Link href="/sandbox">Try</Link>
-        </span>
       </TopNav>
       <div className="page">
         {isDocs ? <SideNav /> : null}
@@ -193,8 +140,8 @@ export default function MyApp(props) {
       <div className="footer-bar">
         <Footer landing={isLandingPage}>
           <Link href="/docs/getting-started">Docs</Link>
-          <Link href="https://github.com/markdoc/markdoc">GitHub</Link>
-          <Link href="https://github.com/markdoc/markdoc/discussions">
+          <Link href="https://github.com/berserksystems/instrumentality">GitHub</Link>
+          <Link href="https://github.com/berserksystems/instrumentality/discussions">
             Community
           </Link>
           <Link href="https://twitter.com/StripeDev">Twitter</Link>
@@ -254,7 +201,7 @@ export default function MyApp(props) {
             position: fixed;
             top: 10px;
             left: 10px;
-            background: var(--light);
+            background: var(--dark);
             z-index: 1000;
             width: auto;
             height: auto;
@@ -294,7 +241,7 @@ export default function MyApp(props) {
           }
 
           .page--landing .footer-bar .theme-toggle button.light {
-            background: var(--white);
+            background: var(--black);
           }
 
           /* Landing page overrides */
@@ -340,6 +287,7 @@ export default function MyApp(props) {
 
           /* Style hero section */
           .page--landing .hero {
+            font-size: 64pt;
             padding: 4rem 0 6rem;
           }
 
@@ -349,7 +297,7 @@ export default function MyApp(props) {
           }
 
           .page--landing .get-started .left ::selection {
-            background: #ffe279 !important;
+            background: #7895FF !important;
           }
 
           .page--landing .try {
@@ -365,7 +313,7 @@ export default function MyApp(props) {
 
           .page--landing .try span.cm-link,
           .page--landing .try span.cm-url {
-            color: var(--yellow);
+            color: #7895FF;
           }
 
           .page--landing .value-props {
@@ -374,14 +322,6 @@ export default function MyApp(props) {
 
           .page--landing .by-stripe {
             padding-top: 110px;
-          }
-
-          .page--landing .sandbox {
-            border-radius: 3px;
-          }
-
-          .page--landing .sandbox .preview p {
-            letter-spacing: initial;
           }
 
           .dark .page--landing .get-started {

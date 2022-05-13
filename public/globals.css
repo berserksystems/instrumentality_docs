@@ -30,7 +30,7 @@
   --font-size-5: 24px;
   --font-size-6: 32px;
   --font-size-7: 38px;
-  --font-size-jumbo: 79px;
+  --font-size-jumbo: 59px;
 
   --line-height-1: 16px;
   --line-height-2: 20px;
@@ -39,7 +39,7 @@
   --line-height-5: 32px;
   --line-height-6: 40px;
   --line-height-7: 48px;
-  --line-height-jumbo: 90px;
+  --line-height-jumbo: 70px;
 }
 
 :root,
@@ -52,12 +52,13 @@
   --gray-medium: #dce6e9;
 
   --yellow: #ffd848;
+  --red: #de6161;
   --purple: #6e00f5;
   --green: #0a993e;
-  --blue: #0073e6;
-  --magenta: #dc34dc;
+  --blue: #60a2e3;
+  --magenta: #b46bb4;
 
-  --theme: var(--yellow);
+  --theme: #7895FF;
   --stripe: #0a2540;
 
   --light: var(--white);
@@ -85,21 +86,6 @@
   --translucent: rgba(255, 255, 255, 0.4);
 }
 
-.dark,
-/* Landing page uses a custom pre w/ a black background and --dark mode colors */
-.page--landing pre[class*='language-'],
-.sandbox .CodeMirror {
-  --light: var(--black);
-  --dark: var(--white);
-  --text: var(--dark);
-
-  --purple: var(--yellow); /* Change purple to yellow in dark mode */
-  --green: #00d924;
-  --blue: #80e9ff;
-  --magenta: #ff80ff;
-}
-
-
 html,
 body,
 #__next {
@@ -115,8 +101,8 @@ body,
 }
 
 body {
-  color: var(--text);
-  background: var(--light);
+  color: var(--dark);
+  background: var(--black);
   font-family: var(--sans);
 }
 
@@ -221,14 +207,14 @@ h2,
 .h2 {
   font-size: var(--font-size-5);
   line-height: var(--line-height-5);
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 h3,
 .h3 {
   font-size: var(--font-size-4);
   line-height: var(--line-height-4);
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
 h4,
@@ -420,13 +406,13 @@ pre[class*='language-'] .md-link {
 pre .token.string,
 pre .token.boolean,
 pre .token.number {
-  color: var(--magenta) !important;
+  color: var(--blue) !important;
 }
 
 pre .token.function,
 pre .token.tagType,
 pre .token.tag {
-  color: var(--blue) !important;
+  color: var(--red) !important;
 }
 
 pre .token.keyword,
@@ -436,39 +422,6 @@ pre .token.keyword,
 
 pre .token.variable {
   color: var(--green) !important;
-}
-
-.sandbox span.cm-comment {
-  color: var(--gray-medium);
-}
-
-.sandbox span.cm-keyword,
-.sandbox span.cm-tag {
-  color: var(--blue);
-}
-
-.sandbox span.cm-string {
-  color: var(--magenta);
-}
-
-.sandbox span.cm-number,
-.sandbox span.cm-atom {
-  color: var(--purple);
-}
-
-.sandbox span.cm-link,
-.sandbox span.cm-url {
-  text-decoration: none;
-  color: var(--theme);
-}
-
-.sandbox span.cm-property {
-  color: inherit;
-}
-
-.sandbox span.cm-strong,
-.sandbox span.cm-header {
-  font-weight: normal;
 }
 
 main .CodeMirror,

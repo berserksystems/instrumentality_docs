@@ -1,26 +1,15 @@
-# Markdoc docs
+# Documentation for Instrumentality
+This is a documentation site for server administrators running instances of [Instrumentality](https://github.com/berserksystems/instrumentality).
 
-## Contributing
+## Installation
+```shell
+yarn install &&
+yarn build && 
+yarn start
+```
 
-Contributions and feedback are welcomed and encouraged. Feel free to open PRs here, or open issues in the [Markdoc core repo](https://github.com/markdoc/markdoc).
+## Credits
 
-To edit the docs, follow these steps:
+This is a fork of [Markdoc's own docs site](https://github.com/markdoc/docs).
 
-1. Start the development server
-   ```shell
-   npm run dev
-   ```
-   or
-   ```shell
-   yarn dev
-   ```
-2. Open [http://localhost:3000](http://localhost:3000) to view the Markdoc site.
-3. Try editing `pages/index.md`
-
-## Code of conduct
-
-This project has adopted the Stripe [Code of conduct](https://github.com/markdoc/markdoc/blob/main/.github/CODE_OF_CONDUCT.md).
-
-## License
-
-This project uses the [MIT license](LICENSE).
+See [LICENSE](LICENSE) for more details.

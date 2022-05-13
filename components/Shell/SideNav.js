@@ -4,46 +4,36 @@ import Link from 'next/link';
 
 const items = [
   {
-    title: 'Get started',
+    title: 'Info',
     links: [
-      { href: '/docs/overview', children: 'What is Markdoc?' },
-      { href: '/docs/getting-started', children: 'Installation' },
-      { href: '/docs/faq', children: 'FAQ'},
-      { href: '/sandbox', children: 'Try it out' }
+      { href: '/', children: 'What is Instrumentality?' },
+      { href: '/docs/quick_start', children: 'Quick Start' },
+      { href: '/docs/data', children: 'Data'},
+      { href: '/docs/faq', children: 'FAQ' },
     ]
   },
   {
-    title: 'Core concepts',
+    title: 'Routes',
     links: [
-      { href: '/docs/syntax', children: 'Syntax and schema' },
-      { href: '/docs/nodes', children: 'Nodes' },
-      { href: '/docs/tags', children: 'Tags' },
-      { href: '/docs/attributes', children: 'Attributes' },
-      { href: '/docs/variables', children: 'Variables' },
-      { href: '/docs/functions', children: 'Functions' },
-      {
-        href: '/docs/render',
-        children: 'Rendering'
-      },
-      { href: '/docs/validation', children: 'Validation' }
+      { href: '/docs/frontpage', children: '/' },
+      { href: '/docs/add', children: '/add' },
+      { href: '/docs/view', children: '/view' },
+      { href: '/docs/types', children: '/types' },
+      { href: '/docs/queue', children: '/queue' },
+      { href: '/docs/login', children: '/login' },
+      { href: '/docs/register', children: '/register' },
+      { href: '/docs/create', children: '/create'},
+      { href: '/docs/update', children: '/update' },
+      { href: '/docs/delete', children: '/delete' },
     ]
   },
   {
-    title: 'Integration guides',
+    title: 'Libraries & Clients',
     links: [
-      { href: '/docs/examples', children: 'Common examples' },
-      { href: '/docs/examples/html', children: 'Using with HTML' },
-      { href: '/docs/nextjs', children: 'Using with Next.js' },
-      { href: '/docs/examples/react', children: 'Using with React' }
+      { href: '/docs/instrumentality_py', children: 'instrumentality.py' },
+      { href: '/docs/iruel', children: 'Iruel' },
     ]
   },
-  {
-    title: 'Advanced concepts',
-    links: [
-      { href: '/docs/frontmatter', children: 'Frontmatter' },
-      { href: '/docs/partials', children: 'Partials' }
-    ]
-  }
 ];
 
 export function SideNav() {

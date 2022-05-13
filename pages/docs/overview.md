@@ -33,4 +33,3 @@ Markdoc has its own dedicated rendering architecture rather than relying on mark
 ## Next steps
 
 - [Install Markdoc](/docs/getting-started)
-- [Try it out online](/sandbox)
