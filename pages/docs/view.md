@@ -7,7 +7,7 @@ description: View data.
 
 ## Request
 HTTP GET
-Header: {X-API-KEY: "APIKEY"}
+Header: {X-API-KEY: APIKEY}
 
 View requests must supply a subjects argument, which is an array of UUIDs of subjects.
 

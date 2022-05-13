@@ -7,7 +7,7 @@ description: User data.
 
 ## Request
 HTTP GET
-Header: {X-API-KEY: "APIKEY"}
+Header: {X-API-KEY: APIKEY}
 
 ## Response
 ```json

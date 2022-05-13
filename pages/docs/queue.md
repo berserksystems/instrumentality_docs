@@ -7,7 +7,7 @@ description: The queue.
 
 ## Request
 HTTP GET
-Header: {X-API-KEY: "APIKEY"}
+Header: {X-API-KEY: APIKEY}
 Queue requests must supply a platforms argument, which is an array of platform strings.
 
 `/queue?platforms=[platform1, platform2]`

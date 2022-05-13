@@ -7,7 +7,7 @@ description: Add data.
 
 ## Request
 HTTP POST
-Header: {X-API-KEY: "APIKEY"}
+Header: {X-API-KEY: APIKEY}
 ```json
 {
     "queue_id": "UUID_V4_STRING",

@@ -7,6 +7,8 @@ description: Update subjects and groups.
 
 ## Request
 HTTP POST
+Header: {X-API-KEY: APIKEY}
+
 ```json
 {
     "name": "User",

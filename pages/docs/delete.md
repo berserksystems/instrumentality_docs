@@ -7,7 +7,7 @@ description: Delete subjects and groups.
 
 ## Request
 HTTP POST
-Header: {X-API-KEY: "APIKEY"}
+Header: {X-API-KEY: APIKEY}
 ```json
 {
     "uuid": "UUID_V4_STRING"

@@ -7,7 +7,7 @@ description: Create subjects and groups.
 
 ## Request
 HTTP POST
-Header: {X-API-KEY: "APIKEY"}
+Header: {X-API-KEY: APIKEY}
 ```json
 {
     "name": "User",
