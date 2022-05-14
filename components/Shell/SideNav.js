@@ -25,6 +25,7 @@ const items = [
       { href: '/docs/create', children: '/create'},
       { href: '/docs/update', children: '/update' },
       { href: '/docs/delete', children: '/delete' },
+      { href: '/docs/reset', children: '/reset' },
     ]
   },
   {
