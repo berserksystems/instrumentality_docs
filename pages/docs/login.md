@@ -5,10 +5,16 @@ description: User data.
 
 # {% $markdoc.frontmatter.title %}
 
-## Request
-HTTP GET
-Header: {X-API-KEY: APIKEY}
+{% callout type="warning" %}
+This is a privileged route. 
 
+Your request headers must contain a valid API key under 'X-API-KEY'.
+{% /callout %}
+
+## Request
+{% callout type="note" %}
+HTTP GET
+{% /callout %}
 ## Response
 ```json
 {

@@ -7,17 +7,9 @@ module.exports = withMarkdoc({ mode: 'static' })({
     return [
       {
         source: '/docs',
-        destination: '/docs/getting-started',
+        destination: '/docs/quick_start',
         permanent: false
       }
     ];
   },
-  rewrites() {
-    return [
-      {
-        source: '/spec',
-        destination: '/spec.html'
-      }
-    ];
-  }
 });

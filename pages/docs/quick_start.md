@@ -42,6 +42,14 @@ If you're happy to use the default configuration, you can move `InstrumentalityE
 
 Upon first launch, Instrumentality will create a root user and output that user's details into the terminal. If you don't have access to this, you'll have to read these details out of the users collection in MongoDB.
 
+## Add data.
+
+See the documentation for the endpoint for [adding](add) data.
+
+## Create subjects and groups.
+
+See the documentation for the endpoint for [creating](create) subjects and groups.
+
 ## Invite another user.
 
 As an existing user, you can invite another user by creating an invite code using `/invite`. `/invite` is a privileged GET route, so you'll need to have your API in your request headers under `X-API-KEY`.

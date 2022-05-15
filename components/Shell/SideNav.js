@@ -16,9 +16,9 @@ const items = [
     title: 'Endpoints',
     links: [
       { href: '/docs/frontpage', children: '/' },
+      { href: '/docs/types', children: '/types' },
       { href: '/docs/add', children: '/add' },
       { href: '/docs/view', children: '/view' },
-      { href: '/docs/types', children: '/types' },
       { href: '/docs/queue', children: '/queue' },
       { href: '/docs/login', children: '/login' },
       { href: '/docs/register', children: '/register' },

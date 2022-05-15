@@ -5,9 +5,17 @@ description: The queue.
 
 # {% $markdoc.frontmatter.title %}
 
+{% callout type="warning" %}
+This is a privileged route. 
+
+Your request headers must contain a valid API key under 'X-API-KEY'.
+{% /callout %}
+
 ## Request
+{% callout type="note" %}
 HTTP GET
-Header: {X-API-KEY: APIKEY}
+{% /callout %}
+
 Queue requests must supply a platforms argument, which is an array of platform strings.
 
 `/queue?platforms=[platform1, platform2]`

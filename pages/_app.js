@@ -123,7 +123,7 @@ export default function MyApp(props) {
         Skip to content
       </a>
       <TopNav>
-        <Link href="/docs/getting-started">Docs</Link>
+        <Link href="/docs/quick_start">Docs</Link>
         <Link href="https://github.com/berserksystems/instrumentality">GitHub</Link>
         <Link href="https://github.com/berserksystems/instrumentality/discussions">
           Community
@@ -139,7 +139,7 @@ export default function MyApp(props) {
       </div>
       <div className="footer-bar">
         <Footer landing={isLandingPage}>
-          <Link href="/docs/getting-started">Docs</Link>
+          <Link href="/docs/quick_start">Docs</Link>
           <Link href="https://github.com/berserksystems/instrumentality">GitHub</Link>
           <Link href="https://github.com/berserksystems/instrumentality/discussions">
             Community

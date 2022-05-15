@@ -6,7 +6,9 @@ description: Information about accepted content types.
 # {% $markdoc.frontmatter.title %}
 
 ## Request
+{% callout type="note" %}
 HTTP GET
+{% /callout %}
 
 ## Response
 ```json
