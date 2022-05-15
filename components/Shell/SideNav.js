@@ -7,32 +7,32 @@ const items = [
     title: 'Info',
     links: [
       { href: '/', children: 'What is Instrumentality?' },
-      { href: '/docs/quick_start', children: 'Quick Start' },
-      { href: '/docs/data', children: 'Data'},
-      { href: '/docs/faq', children: 'FAQ' },
+      { href: '/info/quick_start', children: 'Quick Start' },
+      { href: '/info/data', children: 'Data'},
+      { href: '/info/faq', children: 'FAQ' },
     ]
   },
   {
     title: 'Endpoints',
     links: [
-      { href: '/docs/frontpage', children: '/' },
-      { href: '/docs/types', children: '/types' },
-      { href: '/docs/add', children: '/add' },
-      { href: '/docs/view', children: '/view' },
-      { href: '/docs/queue', children: '/queue' },
-      { href: '/docs/login', children: '/login' },
-      { href: '/docs/register', children: '/register' },
-      { href: '/docs/create', children: '/create'},
-      { href: '/docs/update', children: '/update' },
-      { href: '/docs/delete', children: '/delete' },
-      { href: '/docs/reset', children: '/reset' },
+      { href: '/endpoints/frontpage', children: '/' },
+      { href: '/endpoints/types', children: '/types' },
+      { href: '/endpoints/add', children: '/add' },
+      { href: '/endpoints/view', children: '/view' },
+      { href: '/endpoints/queue', children: '/queue' },
+      { href: '/endpoints/login', children: '/login' },
+      { href: '/endpoints/register', children: '/register' },
+      { href: '/endpoints/create', children: '/create'},
+      { href: '/endpoints/update', children: '/update' },
+      { href: '/endpoints/delete', children: '/delete' },
+      { href: '/endpoints/reset', children: '/reset' },
     ]
   },
   {
     title: 'Libraries & Clients',
     links: [
-      { href: '/docs/instrumentality_py', children: 'instrumentality.py' },
-      { href: '/docs/iruel', children: 'Iruel' },
+      { href: '/misc/instrumentality_py', children: 'instrumentality.py' },
+      { href: '/misc/iruel', children: 'Iruel' },
     ]
   },
 ];

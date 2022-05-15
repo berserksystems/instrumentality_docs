@@ -5,11 +5,11 @@ module.exports = withMarkdoc({ mode: 'static' })({
   pageExtensions: ['js', 'md', 'mdoc'],
   redirects() {
     return [
-      {
-        source: '/docs',
-        destination: '/docs/quick_start',
-        permanent: false
-      }
+      // {
+      //   source: '/docs',
+      //   destination: '/docs/quick_start',
+      //   permanent: false
+      // }
     ];
   },
 });
