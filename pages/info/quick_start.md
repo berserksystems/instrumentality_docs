@@ -44,11 +44,11 @@ Upon first launch, Instrumentality will create a root user and output that user'
 
 ## Add data.
 
-See the documentation for the endpoint for [adding](add) data.
+See the documentation for the endpoint for [adding](/endpoints/add) data.
 
 ## Create subjects and groups.
 
-See the documentation for the endpoint for [creating](create) subjects and groups.
+See the documentation for the endpoint for [creating](/endpoints/create) subjects and groups.
 
 ## Invite another user.
 
