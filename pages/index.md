@@ -27,4 +27,4 @@ All data is tagged with the provider that submitted the data, making cleaning a 
 
 ## How can I run my own instance?
 
-Go to [quick start](docs/quick_start) for more details.
+Go to [quick start](info/quick_start) for more details.
