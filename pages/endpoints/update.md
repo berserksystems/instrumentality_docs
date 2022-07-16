@@ -27,7 +27,7 @@ HTTP POST
 ## Response
 ```json
 {
-    "response": "OK",
+    "response": "OK"
 }
 ```
 
