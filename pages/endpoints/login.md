@@ -31,7 +31,7 @@ HTTP GET
             "created_at": "2022-05-11T22:36:41",
             "created_by": "UUID_V4_STRING",
             "name": "User1",
-            "profiles": {"platform1": "user1", "platform2": "user_1", "platform2": "user_1_priv"},
+            "profiles": {"platform1": ["user1"], "platform2": ["user_1", "user_1_private"]},
         }
     ],
     "groups": [

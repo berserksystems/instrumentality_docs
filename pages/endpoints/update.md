@@ -19,7 +19,7 @@ HTTP POST
 ```json
 {
     "name": "User",
-    "profiles": {"platform": "user1", "platform2": "user_1", "platform2": "user_1_private"},
+    "profiles": {"platform1": ["user1"], "platform2": ["user_1", "user_1_private"]},
     "description": "This is user.",
 }
 ```

@@ -31,7 +31,7 @@ This array can be one element long.
             "created_at": "2022-05-11T22:36:41",
             "created_by": "86aea387-5563-4760-be5a-3bc6f575a320",
             "name": "USERNAME",
-            "profiles": {"platform1": "user1", "platform2": "user_1", "platform2": "user_1_priv"},
+            "profiles": {"platform1": ["user1"], "platform2": ["user_1", "user_1_private"]},
         },
         "platforms": [
             {"platform": "platform1",
