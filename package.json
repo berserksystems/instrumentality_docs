@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "name": "@markdoc/docs",
   "scripts": {
     "dev": "next dev",
